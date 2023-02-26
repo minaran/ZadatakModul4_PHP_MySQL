@@ -1,12 +1,11 @@
 <body style="background: linear-gradient(to top, #99ccff 0%, #00ccff 100%);;">
-<div id="stampa">
+    <div id="stampa">
         <button class="button" onclick="window.location.href='utility/racun.php'">Obračun plaćanja</button>   
 
 <h4>Ovde možete pristupiti i uređivati listu korisnika:</h4>
 
 
 <?php
-
 require "dbBroker.php";
 require "model/osoba.php";
 require "model/tipkorisnika.php";
@@ -20,7 +19,6 @@ if(!$result){
     echo "Greska kod upita";
     exit();
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -260,10 +258,7 @@ if(!$result){
                                         <button id="btnDodajZakazivanje" type="submit" class="btn btn-success btn-block" style="background-color: #653428; border: 1px solid black"><i class="glyphicon glyphicon-plus"></i>Zakazivanje
                                         </button>
                                     </div>
-
                                 </div>
-
-
                             </div>
                         </form>
                     </div>
@@ -283,60 +278,3 @@ if(!$result){
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-<hr><form action="" method="post">
-<input type="submit" value="Prikaži spisak lekara" >
-
-<select name="spisakLekara" id="prikaziLekare" name="prikaziLekare">
-  <option value="orl" selected>ORL</option>
-  <option value="ocni" >Oftamologija</option>
-  <option value="fizijatar" >Fizijatar</option>
-</select>
-</form>
-
-<form action="" method="post" id="dodavanjeLekara">
-  <div class = "lekar">
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="ime" placeholder="ime*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="prezime" placeholder="prezime*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="email" placeholder="email*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="sifra" placeholder="sifra*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="jmbg" placeholder="jmbg*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="telefon" placeholder="telefon*" value="" /></div>
-  <div class="red_lekar"><input type="text" style="border: 1px solid black" name="tip" placeholder="tip*" value="" /></div>
-  </div>
-  <input type="submit" value="Dodaj lekara" >
-</form>
-
-
-<hr>
-<form action="" method="post">
-<input type="submit" value="Prikaži spisak pacijenata" id="prikaziPacijente" name="prikaziPacijente">
-</form>
-
-<form action="" method="post">
-<div class = "pacijent">
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="ime" placeholder="ime*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="prezime" placeholder="prezime*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="email" placeholder="email*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="sifra" placeholder="sifra*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="jmbg" placeholder="jmbg*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="telefon" placeholder="telefon*" value="" /></div>
-  <div class="red_pacijent"><input type="text" style="border: 1px solid black" name="tip" placeholder="tip*" value="" /></div>
-  </div>
-  <input type="submit" value="Dodaj pacijenta" id="dodajPacijenta" name="dodajPacijenta">
-</form>
--->
