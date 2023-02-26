@@ -1,0 +1,12 @@
+#btn_logout{
+    
+    background: #888;
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+}
+#btn_logout:hover{
+    opacity: 0.8;
+}
