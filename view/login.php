@@ -14,7 +14,7 @@
 
 <?php
 
-include "../podaci.php";   // podaci za logovanje korisnika su ostali iz zadatka 3. kada nije
+include "../podaci.php";   // podaci za logovanje korisnika su ostali iz zadatka Modul2i3. kada nije
                            // bilo dozvoljeno koristi povezivanje na bazu podataka
 
 if(isset($_SESSION["logovani_korisnik"])){
